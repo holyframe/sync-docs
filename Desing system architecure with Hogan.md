@@ -76,63 +76,7 @@
 
 ---
 
-## Main Proposal
-
-> **Say:** “So the main thing I’m proposing is that we use a shared design system as the common foundation for both HoganX and CoreIgnite.”
-
-> **Say:** “That way, both products can move toward a more consistent visual experience.”
-
----
-
-## 6. Proposal Part 1: Shared Tokens
-
-> **Say:** “At the foundation level, we would continue using shared tokens for the core design language.”
-
-> **Say:** “That includes colors, typography, spacing, radii, shadows, and other foundational values.”
-
-**Show:** `packages/ui/src/styles/globals.css`
-
-→ **Point:** Shared token definitions for color, typography, spacing, radius, and shadow
-
-> **Say:** “HoganX would import the same shared tokens, so both teams are building from the same visual rules.”
-
-> **Say:** “This gives us consistency at the most basic level of the UI.”
-
----
-
-## 7. Proposal Part 2: Shared Components
-
-> **Say:** “Then at the component level, we would define shared building blocks in `@coreignite/ui`.”
-
-**Show:** `@coreignite/ui`
-
-> **Say:** “That would include components like Button, Input, Dialog, Table, and other common UI patterns.”
-
-→ **Point:** Shared component directory structure
-
-> **Say:** “Hogan could use these shared components directly, or build Hogan-specific components on top of the same token system.”
-
-> **Say:** “That gives us a good balance between consistency and flexibility.”
-
----
-
-## 8. Proposal Part 3: Shared Brand Configuration
-
-> **Say:** “The last piece is branding.”
-
-> **Say:** “For brand-specific elements like logos, images, footers, and product names by variant, I’d like us to use the same brand configuration approach.”
-
-**Show:** `brand.ts`
-
-→ **Point:** Brand-specific configuration values such as logo, product name, footer content, and image references
-
-> **Say:** “That way, we can support brand differences where needed without breaking the shared system underneath.”
-
-> **Say:** “So the structure stays consistent, while the brand layer remains configurable.”
-
----
-
-## 9. Closing Summary
+## Closing Summary
 
 > **Say:** “So overall, this is the design system architecture we have today. At the foundation, we have shared tokens. On top of that, we have Tailwind mappings and shared components. And then for product-specific needs, we can handle those through brand configuration. My proposal is to use this shared design system so HoganX and CoreIgnite can stay visually consistent, easier to scale, and easier to maintain over time. By aligning on shared tokens, shared components, and shared brand configuration, we can create a much more consistent experience across both products. So yeah, that’s the design system architecture I wanted to walk through today, and how I think it can support better consistency with Hogan.”
 
